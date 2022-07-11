@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Code Quiz</title>
 </head>
 <body>
-    <a href="./scores.html" target="_blank">View High Scores</a>
+    <header>
+        <a href="./scores.html" target="_blank">View High Scores</a>
+        <p id="timer-container" style="display: none">Time Remaining: <span id="timer-text">0</span></p>
+    </header>
+    <hr>
+    <main>
+        <p id="direction-text">Click the Button Below to Start the Quiz</p>
+        <button type="button" id="start-quiz-btn">Start Quiz</button>
+        <div id="quiz-container"></div>
+        <div id="choice-container"></div>
+    </main>
+    <form id="submit-score-form" style="display: none;">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="player-name-input">
+        <button type="submit" id="submit-score-btn">Submit</button> 
+    </form>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>

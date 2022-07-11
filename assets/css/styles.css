@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin: 5% 10%;
+}
+
+main, form {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: -10% 0;
+}
+
+#direction-text {
+    margin-bottom: 50px;
+
+    font-size: 2rem;
+}
+
+#start-quiz-btn, #submit-score-btn {
+    height: 40px;
+    width: 150px;
+
+    background-color: purple;
+    border-radius: 20px;
+
+    font-size: 18px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#quiz-container {
+    width: 80%;
+    font-size: 2rem;
+}
+
+#choice-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.choice-btn {
+    height: 40px;
+    background-color: purple;
+    border-radius: 20px;
+
+    font-size: 18px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    
+    margin: 50px 5px;
+    flex: 1 1 0;
+}
+
+.choice-btn:hover {
+    background-color: white;
+    box-shadow: 1px 1px black;
+
+    color: purple;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+form input {
+    margin: 20px 0;
+    height: 30px;
+    width: 33%;
+}
