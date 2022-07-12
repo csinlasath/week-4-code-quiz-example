@@ -34,7 +34,7 @@ const quiz = {
     },
     increaseNumCorrect: function (num) {
       const currentCorrect = this.getNumCorrect();
-      this.setNumCorrect(currentPoints + num);
+      this.setNumCorrect(currentCorrect + num);
     },
     setPercentage: function (num) {
       this.percentage = num;
@@ -131,6 +131,7 @@ const quiz = {
       this.renderChoices();
     } else {
       clearInterval(this.getTimerId());
+      this.getScore().setTimeRemaining(this.getTimeRemaining());
       this.endQuiz();
     }
   },
